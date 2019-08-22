@@ -16,7 +16,7 @@ idk why.
 
 ### 🔗 [davet](https://davet.js.org), useless shortener/redirector for your invite link (of your Discord server) which you can access [here](https://davet.js.org).
 
-i think you shouldn't use it, but if you still want to use it, check out [instructions](#add-your-own-server) below.
+i think you shouldn't use it, but if you still want to use it, check out [instructions](#📚-add-your-own-server) below.
 
 ### 📚 add your own server
 
