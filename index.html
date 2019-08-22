@@ -1,0 +1,57 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+
+    {% if page.redir_to %}
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url={{ page.redir_to }}" />
+    <link rel="canonical" href="{{ page.redir_to }}" />
+    <script type="text/javascript">
+      window.location.href = '{{ page.redir_to }}';
+    </script>
+    {% else %}
+    <title>liste</title>
+
+    <style>
+      * {
+        font-family: Helvetica, sans-serif;
+      }
+
+      a {
+        color: black;
+      }
+    </style>
+    {% endif %}
+  </head>
+
+  <body>
+    <h1>davet</h1>
+    <hr />
+    {% if page.redir_to %} Eğer yönlendirilmediyseniz,
+    <a href="{{ page.redir_to }}">bu bağlantıya</a> tıklayınız. {% else %}
+    <div style="width: 850px; margin-top: 15px;">
+      <div id="link_wrapper">
+        <p>kısa bağlantılar:</p>
+        <ul id="links">
+          {% for diversion in site.diversions %}
+          <li>
+            <a href="./{{ diversion.code }}">{{ diversion.name }}</a
+            >: {{ diversion.description }} &rarr;
+            <input
+              type="text"
+              style="width: 300px;"
+              value="{{ diversion.redir }}"
+              readonly
+            />
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+  </body>
+</html>

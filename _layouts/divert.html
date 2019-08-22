@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="title" content="Davet :: {{ page.name }}" />
+    <meta name="theme-color" content="#{{ page.color }}" />
+    <meta name="description" content="{{ page.description }}" />
+    <script>
+      window.location.replace('{{ page.redir }}');
+    </script>
+    <noscript
+      ><meta http-equiv="refresh" content="0; url={{ page.redir }}"
+    /></noscript>
+    <link rel="canonical" href="{{ page.redir }}" />
+    <title>Yönlendiriliyor...</title>
+  </head>
+  <body>
+    <h1>davet</h1>
+    <hr />
+    Eğer yönlendirilmediyseniz,
+    <a href="{{ page.redir }}">bu bağlantıya</a> tıklayınız.
+  </body>
+</html>

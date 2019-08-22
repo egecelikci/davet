@@ -1,0 +1,29 @@
+---
+permalink: /404.html
+---
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>404</title>
+</head>
+
+<body style="font-family: Helvetica, sans-serif;">
+    <div id="content">
+        <div class="view">
+            <h3>404 | Sayfa Bulunamadı</h3>
+            <p>Sanırım yanlış bir şey yaşandı.</p>
+            <br />
+            <p>Lütfen otomatik olarak bir seviye daha yükseğe yönlendirilmek için biraz bekleyin...</p>
+            <br />
+            <p>(beklemeyi sevmiyorsan <a href="../">buraya tıklayabilirsin</a>)</p>
+
+            <script>
+                setTimeout(function() {
+                    window.location = window.location.toString().replace(/\/+$/, '') + '/..'
+                }, 4000)
+            </script>
+</body>
+
+</html>
