@@ -16,11 +16,11 @@ idk why.
 
 ### 🔗 [davet](https://davet.js.org), useless shortener/redirector for your invite link (of your Discord server) which you can access [here](https://davet.js.org).
 
-i think you shouldn't use it, but if you still want to use it, check out [instructions](#📚-add-your-own-server) below.
+i think you shouldn't use it, but if you still want to use it, check out [instructions](#-add-your-own-server) below.
 
 ### 📚 add your own server
 
-after forking this repo, you should add something like [this file](https://raw.githubusercontent.com/egecue/davet/master/_diversions/proje.md) to the [\_diversions](_diversions) folder, then make a pull request to get your server added.
+after forking this repo, you should add something like [this file](_diversions/proje.md) to the [\_diversions](_diversions) folder, then make a pull request to get your server added.
 
 ```markdown
 ---
