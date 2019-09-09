@@ -4,7 +4,7 @@ idk why.
 
 <div align="center">
   <sub>Built with ❤︎ & ☕ by
-  <a href="https://github.com/egecue">Ege</a>
+  <a href="https://github.com/egecelikci">Ege</a>
 	</sub>
 </div>
 
